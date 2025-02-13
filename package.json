@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "NODE_ENV=production node backend/index.js",
-    "dev": "NODE_ENV=development node --watch backend/index.js",
+    "dev": "NODE_ENV=development node backend/index.js",
     "build": "npm install && npm install --prefix client && npm run test --prefix client && npm run build --prefix client",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
