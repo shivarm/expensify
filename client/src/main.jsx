@@ -15,7 +15,11 @@ const client = new ApolloClient({
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter
+      future={{
+        v7_relativeSplatPath: true,
+      }}
+    >
       <GridBackground>
         <ApolloProvider client={client}>
           <App />
